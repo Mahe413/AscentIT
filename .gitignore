@@ -1,0 +1,5 @@
+.DS_Store
+images
+
+#These above files will be ignored while commit
+# .( file type )   this acts as wild card to ignore all file with that file type extension

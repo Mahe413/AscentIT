@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ascent IT Solutions</title>
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ascent IT Solutions</title> 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,8 +22,9 @@
         <div class="hero">
             <img src="images/hero.png" alt="Hero Image">
             <div class="hero-text">
-                <h2>Experienced, Personalized IT Consulting</h2>
+                <h2>Experience Personalized IT Consulting</h2>
                 <p>Let us help you with your success!</p>
+                <button id="openModal">Drop us a line!</button>
             </div>
         </div>
         <div class="about-content">
@@ -92,25 +93,38 @@
         <div id="map">
             <img src="map.png" alt="Map">
         </div>
-        <div class="contact-form">
-            <form action="submit_form.php" method="post">
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">How can we help?*</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Ascent IT Solutions. All rights reserved.</p>
     </footer>
+
+    <!-- Modal Structure -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Drop us a line!</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mobile">Mobile number</label>
+                <input type="mobile" id="mobile" name="mobile" >
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <div class="button-group">
+                    <button type="submit">Send</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
